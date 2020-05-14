@@ -9,7 +9,7 @@
 
     <!-- Define your beans here -->
     <bean id="myCoach"
-  	class="com.dawalberto.springdemo.TrackCoach">
+  	class="com.dawalberto.springdemo.UnicycleCoach">
     </bean>
     
 </beans>
