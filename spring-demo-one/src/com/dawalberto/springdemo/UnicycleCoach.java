@@ -2,6 +2,12 @@ package com.dawalberto.springdemo;
 
 public class UnicycleCoach implements Coach {
 
+	private FortuneService fortuneService;
+	
+	public UnicycleCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+	
 	@Override
 	public String getDailyWorkout() {
 		return "Do 5 rolling wraps and 1 360";
@@ -9,8 +15,7 @@ public class UnicycleCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Just do it: " + fortuneService.getFortune();
 	}
 
 }
