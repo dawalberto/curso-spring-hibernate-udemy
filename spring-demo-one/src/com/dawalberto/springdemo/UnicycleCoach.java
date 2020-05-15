@@ -7,4 +7,10 @@ public class UnicycleCoach implements Coach {
 		return "Do 5 rolling wraps and 1 360";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
