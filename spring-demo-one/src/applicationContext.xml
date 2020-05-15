@@ -18,15 +18,19 @@
     <bean id="myCoach"
   	class="com.dawalberto.springdemo.TrackCoach">
   	
-		<!-- set up constructor injection -->
-		<constructor-arg ref="myFortuneService" />    
+		<!-- constructor injection -->
+		<constructor-arg ref="myFortuneService" />
     </bean>
     
     <bean id="myCricketCoach"
     class="com.dawalberto.springdemo.CricketCoach">
     
-    	<!-- set up setter injection -->
-    	<property name="fortuneService" ref="myFortuneService"></property>
+    	<!-- setter injection -->
+    	<property name="fortuneService" ref="myFortuneService"/>
+    	
+    	<!-- literal values injection -->
+    	<property name="emailAddress" value="CricketCoach@CricketCoach.com"/>
+    	<property name="team" value="CricketCoach Team"/>
     </bean>
     
 </beans>
