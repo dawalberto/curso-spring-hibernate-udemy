@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -15,6 +17,7 @@ public class RandomFortuneFromFileService implements FortuneService {
 	private List<String> fortunes = new ArrayList<String>();	
 	
 	@Override
+	@PostConstruct
 	public String getFortune() {
 		try {
 			FileReader file = new FileReader(new File("/Users/dawalberto/Code/Workspaces/Java/eclipse/curso-spring-hibernate-udemy/spring-demo-annotations/src/com/dawalberto/springdemo/fortunes.txt"));
@@ -28,7 +31,9 @@ public class RandomFortuneFromFileService implements FortuneService {
 			reader.close();
 		} catch (Exception e) { }
 		
-		return fortunes.get(new Random().nextInt(fortunes.size()));
+		String fortune = fortunes.get(new Random().nextInt(fortunes.size()));
+		System.out.println(fortune);
+		return fortune;
 	}
 
 }
