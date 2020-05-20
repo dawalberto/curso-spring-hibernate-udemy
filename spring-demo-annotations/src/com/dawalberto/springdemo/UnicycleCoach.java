@@ -10,7 +10,7 @@ public class UnicycleCoach implements Coach {
 	
 	// As a Spring Framework 4.3 an @Autowired annotaion is no longer necessary if the bean only defines one constructor.
 	// If @Qualifier is in Constructor the syntax is much different than in Field
-	public UnicycleCoach(@Qualifier("happyFortuneService")FortuneService theFortuneService) {
+	public UnicycleCoach(@Qualifier("randomFortuneFromFileService")FortuneService theFortuneService) {
 		fortuneService = theFortuneService;
 	}
 	
