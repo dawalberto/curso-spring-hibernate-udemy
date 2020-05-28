@@ -34,6 +34,20 @@
 				<form:radiobutton path="favoriteLanguage" value="Python"></form:radiobutton>
 			</label>
 			
+			<p>Operating Systems:</p>
+			<label>
+				Linux
+				<form:checkbox path="operatingSystems" value="Linux"></form:checkbox>
+			</label>
+			<label>
+				Mac OS
+				<form:checkbox path="operatingSystems" value="Mac OS"></form:checkbox>
+			</label>
+			<label>
+				MS Windows
+				<form:checkbox path="operatingSystems" value="MS Windows"></form:checkbox>
+			</label>
+			
 			<br />
 			<input type="submit" value="Submit" />
 				
