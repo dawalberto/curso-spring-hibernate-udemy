@@ -11,5 +11,7 @@
 	
 	<h1>Free passes: ${customer.freePasses}</h1>
 	
+	<h1>Postal Code: ${customer.postalCode}</h1>
+	
 	</body>
 </html>
