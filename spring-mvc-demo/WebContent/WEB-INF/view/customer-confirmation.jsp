@@ -9,5 +9,7 @@
 	
 	<h1>The customer is confirmed: ${customer.firstName} ${customer.lastName}</h1>
 	
+	<h1>Free passes: ${customer.freePasses}</h1>
+	
 	</body>
 </html>
