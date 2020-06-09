@@ -13,5 +13,7 @@
 	
 	<h1>Postal Code: ${customer.postalCode}</h1>
 	
+	<h1>Course Code: ${customer.courseCode}</h1>
+	
 	</body>
 </html>
